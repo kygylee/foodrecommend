@@ -12,7 +12,25 @@
         android:id="@+id/layout_start"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible">
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="354dp"
+            android:layout_height="698dp"
+            android:fontFamily="@font/tmonblack"
+            android:gravity="center"
+            android:text="?"
+            android:textColor="#2D3578"
+            android:textSize="600sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.271"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
 
         <TextView
             android:id="@+id/tv_title"
@@ -21,9 +39,9 @@
             android:layout_marginBottom="100dp"
             android:fontFamily="@font/nanumsquareneo_variable"
             android:gravity="center"
-            android:text="지금 뭐먹지?"
+            android:text="지금 뭐먹지"
             android:textColor="#FFFFFF"
-            android:textSize="30sp"
+            android:textSize="50sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -34,9 +52,9 @@
             android:layout_width="130dp"
             android:layout_height="53dp"
             android:layout_marginBottom="100dp"
+            android:background="#FFE6E6"
             android:fontFamily="@font/nanumsquareneo_variable"
             android:text="시작하기"
-            android:background="#FFE6E6"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -47,6 +65,7 @@
             app:layout_constraintVertical_bias="0.061" />
 
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,7 +73,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:animateLayoutChanges="true"
-        android:visibility="gone">
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="-57dp">
 
         <TextView
             android:id="@+id/tv_question"
@@ -64,7 +85,7 @@
             android:fontFamily="@font/nanumsquareneo_variable"
             android:gravity="center"
             android:textColor="#ffffff"
-            android:textSize="26sp"
+            android:textSize="23sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -86,61 +107,66 @@
 
         <LinearLayout
             android:id="@+id/layout_radio"
-            android:layout_width="314dp"
-            android:layout_height="287dp"
-            android:layout_marginTop="48dp"
+            android:layout_width="335dp"
+            android:layout_height="311dp"
+            android:layout_marginTop="56dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_question">
 
             <CheckBox
                 android:id="@+id/radio_1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#9196BF"
                 android:fontFamily="@font/nanumsquareneo_variable"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 tools:text="하나" />
 
             <CheckBox
                 android:id="@+id/radio_2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#9196BF"
                 android:fontFamily="@font/nanumsquareneo_variable"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 tools:text="하나" />
 
             <CheckBox
                 android:id="@+id/radio_3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#9196BF"
                 android:fontFamily="@font/nanumsquareneo_variable"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 tools:text="하나" />
 
             <CheckBox
                 android:id="@+id/radio_4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#9196BF"
                 android:fontFamily="@font/nanumsquareneo_variable"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 tools:text="하나" />
 
             <CheckBox
                 android:id="@+id/radio_5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#9196BF"
                 android:fontFamily="@font/nanumsquareneo_variable"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 tools:text="하나" />
 
             <CheckBox
                 android:id="@+id/radio_6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#9196BF"
                 android:fontFamily="@font/nanumsquareneo_variable"
-                android:textColor="#ffffff"
+                android:textColor="@color/black"
                 tools:text="하나" />
         </LinearLayout>
 
@@ -149,6 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
+            android:buttonTint="#ffffff"
             android:fontFamily="@font/nanumsquareneo_variable"
             android:text="다음"
             android:textColor="#000000"

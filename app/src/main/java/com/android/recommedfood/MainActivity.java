@@ -15,6 +15,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import android.view.View;
+import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding mBinding;
@@ -81,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
                     filterFoodList();
                     mBinding.layoutStart.setVisibility(View.VISIBLE);
                     mBinding.layoutQuestion.setVisibility(View.GONE);
+                    TextView textView1 = findViewById(R.id.tv_title1);
+                    textView1.setVisibility(View.GONE);  // 안 보이게 하기
+
+                    TextView textView2 = findViewById(R.id.tv_title);
+                    textView2.setTextSize(20);  // 텍스트 크기를 20sp로 설정
 
                     String s = String.join(", ", resList);
 
